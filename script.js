@@ -10,3 +10,17 @@ b2.addEventListener('click', function() {tt.innerHTML = 'Розклад:<br>1. �
 b3.addEventListener('click', function() {tt.innerHTML = 'Розклад:<br>1. Зарубіжна література<br>2. Мистецтво<br>3. Фізкультура<br>4. Географія/Історія України<br>5. Основи правознавства<br>6. Українська мова<br>7. Географія'});
 b4.addEventListener('click', function() {tt.innerHTML = 'Розклад:<br>1. Фізика<br>2. Біологія<br>3. Англійська мова<br>4. Фізкультура<br>5. Українська мова<br>6. Хімія<br>7. Німецька мова'});
 b5.addEventListener('click', function() {tt.innerHTML = 'Розклад:<br>1. Геометрія<br>2. Фізкультура<br>3. Українська література<br>4. Інформатика<br>5. Трудове навчання<br>6. Основи здоров\'я'});
+let root = document.querySelector(':root');
+let rootStyles = getComputedStyle(root);
+let mainColor = rootStyles.getPropertyValue('--mainColor');
+console.log(mainColor); // '#ffeead'"
+let input = document.querySelector('input[type="checkbox"]');
+function check() {
+	if (input.checked) {
+		root.style.setProperty('--mainColor', 'white');
+		root.style.setProperty('--digColor', '0');
+	} else {
+		root.style.setProperty('--mainColor', 'black');
+		root.style.setProperty('--digColor', '255');
+	}
+}
