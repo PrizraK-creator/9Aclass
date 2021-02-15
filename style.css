@@ -254,3 +254,8 @@ ul {
 .darkModeText {
 	font-size: 3vh;
 }
+@media handheld {
+	.sites {
+		font-size: 20px;
+	}
+}
