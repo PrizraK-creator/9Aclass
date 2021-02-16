@@ -40,7 +40,7 @@ dannie = {'polz_name':name, 'polz_tel':tel};
 
 if(otpravka)
  {
- $.post('senda.php', dannie, function(otvet){
+ $.post('send.php', dannie, function(otvet){
  rezultat = '<div>'+otvet.text+'</div>';
  $("#form_result").hide().html(rezultat).slideDown();
  }, 'json');
