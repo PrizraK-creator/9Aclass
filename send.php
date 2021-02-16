@@ -36,7 +36,7 @@
 
  $message = "Имя: ".$user_Name.". Телефон: ".$user_Phone;
 
- if(!mail($to_Email, $subject, $message, "From: info@9a-class.netlify.app \r\n"))
+ if(!mail($to_Email, $subject, $message, "From: info@9a-class.netlify.app. \r\n"))
  {
  $otvet_serv = json_encode(array('text' => 'Не могу отправить почту! Пожалуйста, проверьте ваши настройки PHP почты.'));
  die($otvet_serv);
