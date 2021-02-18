@@ -19,9 +19,12 @@ function check() {
 	if (input.checked) {
 		root.style.setProperty('--mainColor', 'white');
 		root.style.setProperty('--digColor', '0');
+		root.style.setProperty('--bg', 'url(img/dark_background.png)');
+
 	} else {
 		root.style.setProperty('--mainColor', 'black');
 		root.style.setProperty('--digColor', '255');
+		root.style.setProperty('--bg', 'url(img/image_background1.jpg)');
 	}
 }
 

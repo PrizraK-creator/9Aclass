@@ -2,6 +2,8 @@
 	--mainColor: black;
 	--mainBackground: black;
 	--digColor: 255;
+	--bg: url(img/image_background1.jpg);
+	--sz: 30%;
 }
 .wrap {
 	position: absolute;
@@ -67,7 +69,8 @@ span {
 	background-color: rgba(0, 0, 0, .2);
 }
 body {
-	background-image: url('img/image_background1.jpg');
+	background-image: var(--bg);
+	background-size: var(--sz);
 }
 .comments_fon {
 	background-color: rgba(255, 255, 255, .5);
@@ -164,7 +167,7 @@ header {
 .timetable {
 	font-size: 3vh;
 	height: 80%;
-	border: 1px solid #000;
+	border: 1px solid var(--mainColor);
 	margin: 1vw 1vh;
 }
 a {
@@ -187,7 +190,7 @@ button {
 	background-color: rgba(0, 0, 0, 0);
 	border-radius: 10px;
 	box-shadow: 1px 1px 2px #000;
-	border: 1px solid #000;
+	border: 1px solid var(--mainColor);
 }
 button:hover {
 	color: red;
@@ -197,17 +200,20 @@ button:hover {
 .sites {
 	width: 70%;
 	height: 15vh;
-	border: 1px solid #000;
-	background-color: rgba(255, 255, 255, .6);
-	color: black;
+	border: 1px solid var(--mainColor);
+	background-color: rgba(0, 0, 0, .6);
+	color: var(--mainColor);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-size: 4vh;
 }
+.sites a {
+	color: var(--mainColor);
+}
 .sites:hover {
-	color: white;
-	background-color: rgba(0, 0, 0, .6);
+	color: black;
+	background-color: grey;
 }
 .sites a:hover {
 	cursor: context-menu;
