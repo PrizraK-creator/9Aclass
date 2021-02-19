@@ -243,7 +243,7 @@ ul {
 	margin: auto;
 }
 .card > div > span {
-	-webkit-text-stroke: 1px black;
+	-webkit-text-stroke: 1px var(--mainColor);
 	background: -webkit-linear-gradient(#eee, #333);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
