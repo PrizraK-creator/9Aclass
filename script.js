@@ -19,7 +19,7 @@ function check() {
 	if (input.checked) {
 		root.style.setProperty('--mainColor', 'white');
 		root.style.setProperty('--digColor', '0');
-		root.style.setProperty('--bg', 'url(img/dark_background.png)');
+		root.style.setProperty('--bg', 'url(img/dark_background.jpg)');
 		root.style.setProperty('--gColor1', 'black');
 		root.style.setProperty('--gColor2', 'grey');
 
