@@ -20,11 +20,15 @@ function check() {
 		root.style.setProperty('--mainColor', 'white');
 		root.style.setProperty('--digColor', '0');
 		root.style.setProperty('--bg', 'url(img/dark_background.png)');
+		root.style.setProperty('--gColor1', 'black');
+		root.style.setProperty('--gColor2', 'grey');
 
 	} else {
 		root.style.setProperty('--mainColor', 'black');
 		root.style.setProperty('--digColor', '255');
 		root.style.setProperty('--bg', 'url(img/image_background1.jpg)');
+		root.style.setProperty('--gColor1', 'red');
+		root.style.setProperty('--gColor2', 'orange');
 	}
 }
 
