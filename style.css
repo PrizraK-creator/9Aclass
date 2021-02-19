@@ -4,6 +4,8 @@
 	--digColor: 255;
 	--bg: url(img/image_background1.jpg);
 	--sz: 30%;
+	--gColor1: red;
+	--gColor2: orange;
 }
 .wrap {
 	position: absolute;
@@ -90,7 +92,7 @@ header {
 	background-image: url('img/image9.jpg');
 	background-size: 100%;
 	font-size: 2vw;
-	color: white;
+	color: var(--mainColor);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -175,7 +177,7 @@ a {
 	color: #000;
 }
 .src {
-	color: #fff;
+	color: var(--mainColor);
 }
 .news-card, .sidebar1, .sidebar2, .section {
 	box-shadow: 4px 4px 5px #000;
@@ -241,7 +243,7 @@ ul {
 	margin: auto;
 }
 .card > div > span {
-	-webkit-text-stroke: 1px black;
+	-webkit-text-stroke: 1px var(--mainColor);
 	background: -webkit-linear-gradient(#eee, #333);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -249,17 +251,17 @@ ul {
 }
 @keyframes animate {
     0% {
-		background: -webkit-linear-gradient(red, orange);
+		background: -webkit-linear-gradient(var(--gColor1), var(--gColor2));
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
     }
     50% {
-		background: -webkit-linear-gradient(orange, red);
+		background: -webkit-linear-gradient(var(--gColor2), var(--gColor1));
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
     }
     100% {
-		background: -webkit-linear-gradient(red, orange);
+		background: -webkit-linear-gradient(var(--gColor1), var(--gColor2));
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
     }

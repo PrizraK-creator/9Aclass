@@ -9,7 +9,7 @@ b1.addEventListener('click', function() {tt.innerHTML = 'Розклад:<br>1. �
 b2.addEventListener('click', function() {tt.innerHTML = 'Розклад:<br>1. Алгебра<br>2. Хімія<br>3. Історія України<br>4. Українська література<br>5. Німецька мова<br>6. Інформатика<br>7. Всесвітня історія'});
 b3.addEventListener('click', function() {tt.innerHTML = 'Розклад:<br>1. Зарубіжна література<br>2. Мистецтво<br>3. Фізкультура<br>4. Географія/Історія України<br>5. Основи правознавства<br>6. Українська мова<br>7. Географія'});
 b4.addEventListener('click', function() {tt.innerHTML = 'Розклад:<br>1. Фізика<br>2. Біологія<br>3. Англійська мова<br>4. Фізкультура<br>5. Українська мова<br>6. Хімія<br>7. Німецька мова'});
-b5.addEventListener('click', function() {tt.innerHTML = 'Розклад:<br>1. Геометрія<br>2. Фізкультура<br>3. Українська література<br>4. Інформатика<br>5. Трудове навчання<br>6. Основи здоров\'я'});
+b5.addEventListener('click', function() {tt.innerHTML = 'Розклад:<br>1. Геометрія<br>2. Фізика<br>3. Українська література<br>4. Інформатика<br>5. Трудове навчання<br>6. Основи здоров\'я'});
 let root = document.querySelector(':root');
 let rootStyles = getComputedStyle(root);
 let mainColor = rootStyles.getPropertyValue('--mainColor');
@@ -20,11 +20,15 @@ function check() {
 		root.style.setProperty('--mainColor', 'white');
 		root.style.setProperty('--digColor', '0');
 		root.style.setProperty('--bg', 'url(img/dark_background.png)');
+		root.style.setProperty('--gColor1', 'black');
+		root.style.setProperty('--gColor2', 'grey');
 
 	} else {
 		root.style.setProperty('--mainColor', 'black');
 		root.style.setProperty('--digColor', '255');
 		root.style.setProperty('--bg', 'url(img/image_background1.jpg)');
+		root.style.setProperty('--gColor1', 'red');
+		root.style.setProperty('--gColor2', 'orange');
 	}
 }
 
