@@ -4,6 +4,8 @@
 	--digColor: 255;
 	--bg: url(img/image_background1.jpg);
 	--sz: 30%;
+	--gColor1: red;
+	--gColor2: orange;
 }
 .wrap {
 	position: absolute;
@@ -249,17 +251,17 @@ ul {
 }
 @keyframes animate {
     0% {
-		background: -webkit-linear-gradient(red, orange);
+		background: -webkit-linear-gradient(var(--gColor1), var(--gColor2));
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
     }
     50% {
-		background: -webkit-linear-gradient(orange, red);
+		background: -webkit-linear-gradient(var(--gColor2), var(--gColor1));
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
     }
     100% {
-		background: -webkit-linear-gradient(red, orange);
+		background: -webkit-linear-gradient(var(--gColor1), var(--gColor2));
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
     }
