@@ -6,6 +6,7 @@
 	--sz: 30%;
 	--gColor1: red;
 	--gColor2: orange;
+	--newsBg: url(img/image9.jpg);
 }
 .wrap {
 	position: absolute;
@@ -89,7 +90,7 @@ header {
 	width: 30%;
 	height: 100%;
 	text-align: center;
-	background-image: url('img/image9.jpg');
+	background-image: var(--newsBg);
 	background-size: 100%;
 	font-size: 2vw;
 	color: var(--mainColor);
@@ -275,5 +276,26 @@ ul {
 @media all and (min-width: 640px) {
 	.sites {
 		font-size: 21px;
+	}
+}
+.icon1, .icon2 {
+	display: inline-block;
+	height: 10vh;
+	position: absolute;
+	transform-style: preserve-3d;
+	animation: rot1 3s infinite linear;
+}
+.icon1 {
+	left: 0;
+}
+.icon2 {
+	right: 0;
+}
+@keyframes rot1 {
+	from {
+		transform: rotateY(0deg);
+	}
+	to {
+		transform: rotateY(360deg);
 	}
 }

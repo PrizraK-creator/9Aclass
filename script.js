@@ -22,6 +22,7 @@ function check() {
 		root.style.setProperty('--bg', 'url(img/dark_background.jpg)');
 		root.style.setProperty('--gColor1', 'black');
 		root.style.setProperty('--gColor2', 'grey');
+		root.style.setProperty('--newsBg', 'url(img/image_news.jpg)');
 
 	} else {
 		root.style.setProperty('--mainColor', 'black');
@@ -29,6 +30,7 @@ function check() {
 		root.style.setProperty('--bg', 'url(img/image_background1.jpg)');
 		root.style.setProperty('--gColor1', 'red');
 		root.style.setProperty('--gColor2', 'orange');
+		root.style.setProperty('--newsBg', 'url(img/image9.jpg)');
 	}
 }
 
