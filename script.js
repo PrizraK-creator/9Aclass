@@ -28,14 +28,14 @@ let gColor2Light = "orange";
 
 // let now = new Date();
 // let month = now.getMonth();
-// month++;
-// if (month == "12" or month == "1" or month == "2") {
+// let m = month + 1;
+// if (m == "12" or m == "1" or m == "2") {
 // 	let season = "winter";
-// } else if (month == "3" or month == "4" or month == "5") {
+// } else if (m == "3" or m == "4" or m == "5") {
 // 	let season = "spring";
-// } else if (month == "6" or month == "7" or month == "8") {
+// } else if (m == "6" or m == "7" or m == "8") {
 // 	let season = "summer";
-// } else if (month == "9" or month == "10" or month == "11") {
+// } else if (m == "9" or m == "10" or m == "11") {
 // 	let season = "autumn";
 // }
 
@@ -43,10 +43,12 @@ let season = "winter";
 if (season == "winter") {
 	bgDark = "url(img/darkBg.jpg)";
 	newsBgDark = "url(img/image_news.jpg)";
+	headBgDark = "url(img/image5_dark.jpg)";
 
 
 	bgLight = "url(img/image_bg_spring.png)";
 	newsBgLight = "url(img/image9.jpg)";
+	headBgLight = "url(img/image5.png)";
 }
 check();
 function check() {
@@ -57,6 +59,7 @@ function check() {
 		root.style.setProperty('--gColor1', gColor1Dark);
 		root.style.setProperty('--gColor2', gColor2Dark);
 		root.style.setProperty('--newsBg', newsBgDark);
+		root.style.setProperty('--headBg', headBgDark);
 
 	} else {
 		root.style.setProperty('--mainColor', mainColorLight);
@@ -65,6 +68,7 @@ function check() {
 		root.style.setProperty('--gColor1', gColor1Light);
 		root.style.setProperty('--gColor2', gColor2Light);
 		root.style.setProperty('--newsBg', newsBgLight);
+		root.style.setProperty('--headBg', headBgLight);
 	}
 }
 let user = detect.parse(navigator.userAgent);

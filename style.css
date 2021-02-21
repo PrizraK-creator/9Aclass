@@ -6,8 +6,9 @@
 	--sz: 30%;
 	--gColor1: red;
 	--gColor2: orange;
-	--newsBg: url(img/image_bg_spring.jpg);
+	--newsBg: url(img/image9.jpg);
 	--sz: 25%;
+	--headBg: url(img/image5.png);
 }
 .wrap {
 	position: absolute;
@@ -84,7 +85,7 @@ header {
 	justify-content: center;
 	align-items: center;
 	height: 15vh;
-	background-image: url('img/image5.png');
+	background-image: var(--headBg);
 	font-size: 4.5vh;
 }
 .news-card {
