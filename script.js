@@ -15,22 +15,58 @@ let rootStyles = getComputedStyle(root);
 let mainColor = rootStyles.getPropertyValue('--mainColor');
 console.log(mainColor); // '#ffeead'"
 let input = document.querySelector('input[type="checkbox"]');
+
+let mainColorDark = "white";
+let digColorDark = "0";
+let gColor1Dark = "black";
+let gColor2Dark = "grey";
+
+let mainColorLight = "black";
+let digColorLight = "255";
+let gColor1Light = "red";
+let gColor2Light = "orange";
+
+// let now = new Date();
+// let month = now.getMonth();
+// month++;
+// if (month == "12" or month == "1" or month == "2") {
+// 	let season = "winter";
+// } else if (month == "3" or month == "4" or month == "5") {
+// 	let season = "spring";
+// } else if (month == "6" or month == "7" or month == "8") {
+// 	let season = "summer";
+// } else if (month == "9" or month == "10" or month == "11") {
+// 	let season = "autumn";
+// }
+
+let season = "winter";
+if (season == "winter") {
+	bgDark = "url(img/darkBg.jpg)";
+	newsBgDark = "url(img/image_news.jpg)";
+
+
+	bgLight = "url(img/image_bg_spring.png)";
+	newsBgLight = "url(img/image9.jpg)";
+}
+check();
 function check() {
 	if (input.checked) {
-		root.style.setProperty('--mainColor', 'white');
-		root.style.setProperty('--digColor', '0');
-		root.style.setProperty('--bg', 'url(img/dark_background.jpg)');
-		root.style.setProperty('--gColor1', 'black');
-		root.style.setProperty('--gColor2', 'grey');
-		root.style.setProperty('--newsBg', 'url(img/image_news.jpg)');
+		root.style.setProperty('--mainColor', mainColorDark);
+		root.style.setProperty('--digColor', digColorDark);
+		root.style.setProperty('--bg', bgDark);
+		root.style.setProperty('--gColor1', gColor1Dark);
+		root.style.setProperty('--gColor2', gColor2Dark);
+		root.style.setProperty('--newsBg', newsBgDark);
 
 	} else {
-		root.style.setProperty('--mainColor', 'black');
-		root.style.setProperty('--digColor', '255');
-		root.style.setProperty('--bg', 'url(img/image_background1.jpg)');
-		root.style.setProperty('--gColor1', 'red');
-		root.style.setProperty('--gColor2', 'orange');
-		root.style.setProperty('--newsBg', 'url(img/image9.jpg)');
+		root.style.setProperty('--mainColor', mainColorLight);
+		root.style.setProperty('--digColor', digColorLight);
+		root.style.setProperty('--bg', bgLight);
+		root.style.setProperty('--gColor1', gColor1Light);
+		root.style.setProperty('--gColor2', gColor2Light);
+		root.style.setProperty('--newsBg', newsBgLight);
 	}
 }
-
+let user = detect.parse(navigator.userAgent);
+let deviceType = user.device.type;
+$('body').addClass(deviceType);

@@ -6,7 +6,8 @@
 	--sz: 30%;
 	--gColor1: red;
 	--gColor2: orange;
-	--newsBg: url(img/image9.jpg);
+	--newsBg: url(img/image_bg_spring.jpg);
+	--sz: 25%;
 }
 .wrap {
 	position: absolute;
