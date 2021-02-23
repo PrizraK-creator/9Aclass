@@ -61,7 +61,7 @@ function check() {
 		root.style.setProperty('--gColor2', gColor2Dark);
 		root.style.setProperty('--newsBg', newsBgDark);
 		root.style.setProperty('--headBg', headBgDark);
-		root.style.setProperty('--howerColor', "violet");
+		root.style.setProperty('--howerColor', '#'+Math.floor(Math.random()*16777215).toString(16));
 
 	} else {
 		root.style.setProperty('--mainColor', mainColorLight);
@@ -71,10 +71,12 @@ function check() {
 		root.style.setProperty('--gColor2', gColor2Light);
 		root.style.setProperty('--newsBg', newsBgLight);
 		root.style.setProperty('--headBg', headBgLight);
-		root.style.setProperty('--howerColor', "red");
+		root.style.setProperty('--howerColor', '#'+Math.floor(Math.random()*16777215).toString(16));
 	}
 }
 let user = detect.parse(navigator.userAgent);
 let deviceType = user.device.type;
 $('.timetable').addClass(deviceType);
 $('.sites').addClass(deviceType);
+
+var color = '#'+Math.floor(Math.random()*16777215).toString(16);
