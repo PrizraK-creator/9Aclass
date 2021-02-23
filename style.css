@@ -301,3 +301,6 @@ ul {
 		transform: rotateY(360deg);
 	}
 }
+.Mobile {
+	font-size: 20px;
+}

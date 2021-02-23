@@ -73,4 +73,5 @@ function check() {
 }
 let user = detect.parse(navigator.userAgent);
 let deviceType = user.device.type;
-$('body').addClass(deviceType);
+$('.timetable').addClass(deviceType);
+$('.sites').addClass(deviceType);
