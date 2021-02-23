@@ -275,11 +275,7 @@ ul {
 .darkModeText {
 	font-size: 3vh;
 }
-@media all and (min-width: 640px) {
-	.sites {
-		font-size: 21px;
-	}
-}
+
 .icon1, .icon2 {
 	display: inline-block;
 	height: 10vh;
@@ -302,5 +298,5 @@ ul {
 	}
 }
 .Mobile {
-	font-size: 20px;
+	font-size: 10px;
 }
