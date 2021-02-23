@@ -50,6 +50,7 @@ if (season == "winter") {
 	newsBgLight = "url(img/image9.jpg)";
 	headBgLight = "url(img/image5.png)";
 }
+let colorGlobal = "black"
 check();
 function check() {
 	if (input.checked) {
@@ -60,6 +61,7 @@ function check() {
 		root.style.setProperty('--gColor2', gColor2Dark);
 		root.style.setProperty('--newsBg', newsBgDark);
 		root.style.setProperty('--headBg', headBgDark);
+		root.style.setProperty('--howerColor', "violet");
 
 	} else {
 		root.style.setProperty('--mainColor', mainColorLight);
@@ -69,6 +71,7 @@ function check() {
 		root.style.setProperty('--gColor2', gColor2Light);
 		root.style.setProperty('--newsBg', newsBgLight);
 		root.style.setProperty('--headBg', headBgLight);
+		root.style.setProperty('--howerColor', "red");
 	}
 }
 let user = detect.parse(navigator.userAgent);

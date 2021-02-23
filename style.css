@@ -9,6 +9,7 @@
 	--newsBg: url(img/image9.jpg);
 	--sz: 25%;
 	--headBg: url(img/image5.png);
+	--howerColor: red;
 }
 .wrap {
 	position: absolute;
@@ -194,13 +195,14 @@ button {
 	margin-top: 3%;
 	background-color: rgba(0, 0, 0, 0);
 	border-radius: 10px;
-	box-shadow: 1px 1px 2px #000;
+	box-shadow: 1px 1px 2px var(--mainColor);
 	border: 1px solid var(--mainColor);
 }
 button:hover {
-	color: red;
-	box-shadow: 1px 1px 2px red;
-	border: 1px solid red;
+	color: var(--howerColor);
+	box-shadow: 1px 1px 2px var(--howerColor);
+	border: 1px solid var(--howerColor);
+
 }
 .sites {
 	width: 70%;
@@ -299,4 +301,9 @@ ul {
 }
 .Mobile {
 	font-size: 12px;
+}
+header {
+	position: sticky;
+	top: 0;
+	left: 0;
 }
